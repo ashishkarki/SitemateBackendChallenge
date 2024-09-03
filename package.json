@@ -1,0 +1,30 @@
+{
+  "name": "sitemate-backend-challenge",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "private": true,
+  "scripts": {
+    "clean:all": "rm -rf node_modules client/node_modules server/node_modules package-lock.json client/package-lock.json server/package-lock.json yarn.lock",
+    "clean:install": "npm run clean:all && npm install",
+    "client:install": "cd client && npm install",
+    "server:install": "cd server && npm install",
+    "install": "npm run client:install && npm run server:install",
+    "client:build": "cd client && npm run build",
+    "server:start-dev": "cd server && nodemon src/index.js",
+    "server:start-prod": "cd server && node src/index.js",
+    "start-dev": "npm run client:build && npm run server:start-dev",
+    "start-prod": "npm run client:build && npm run server:start-prod",
+    "restart": "npm run clean:install && npm run start-dev"
+  },
+  "keywords": [
+    "issue",
+    "node",
+    "react",
+    "code-challenge"
+  ],
+  "author": "ashish karki",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

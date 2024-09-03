@@ -16,7 +16,7 @@ router.post('/issues', (req, res) => {
 
 // 2. Read: returns a static JSON object
 router.get('/issues', (req, res) => {
-  res.status(200).send(SAMPLE_ISSUE) // Use the imported SAMPLE_ISSUE
+  res.status(200).send([SAMPLE_ISSUE]) // Use the imported SAMPLE_ISSUE
 })
 
 // 3. Update: accepts a JSON object & prints/logs the object
