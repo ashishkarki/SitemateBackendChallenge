@@ -37,17 +37,19 @@ cd server
 npm install
 ```
 
-### 3. Run the Server
+### 3. Run the Server (local development)
+
+Update the .env file or set the environment variable to run the server on a different port if needed (default is 8000):
 
 `npm run dev`
 
-The server will start on `http://localhost:3000`.
+The server will start on `http://localhost:8000`.
 
 ### 4. Test the API
 
 Use tools like Postman to interact with the API. The base URL for all API requests is:
 
-`http://localhost:3000/api/v1/`
+`http://localhost:8000/api/v1/`
 
 ### Example Endpoints:
 
@@ -60,20 +62,24 @@ Use tools like Postman to interact with the API. The base URL for all API reques
 
 To make testing easier, a Postman collection is provided. You can find it at the following path:
 
-Copy code
-
 `server/SitemateBackendChallenge-Sep2024.postman_collection.json`
 
 - **Import the Collection**: Import this file into Postman to easily access and run the CRUD operations.
+
+### Postman Environment Variables
+
+To ensure flexibility and easy configuration, the Postman collection uses environment variables for the server, port, and API version:
+
+1.  **Variables**:
+
+    - **`server`**: The server address where the API is hosted. Default is `localhost`.
+    - **`port`**: The port on which the API server is running. Default is `5000`.
+    - **`apiVersion`**: The API version. Default is `v1`.
 
 ## Future Enhancements
 
 - **Static Frontend**: Serve the client application statically from the backend.
 - **Dockerization**: Containerize the entire application for easy deployment.
-
-## Postman Collection (Planned)
-
-If you prefer testing with Postman, a Postman collection will be included in the final project.
 
 ## License
 
