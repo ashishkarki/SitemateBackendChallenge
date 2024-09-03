@@ -51,12 +51,20 @@ Use tools like Postman to interact with the API. The base URL for all API reques
 
 ### Example Endpoints:
 
-- **Get API Root**: `GET /api/v1/` - Returns a welcome message.
-- **Get Issues**: `GET /api/v1/issues` - Fetches a list of issues.
+- **Create Issue**: `POST /api/v1/issues`
+- **Get Issue**: `GET /api/v1/issues`
+- **Update Issue**: `PUT /api/v1/issues/:id`
+- **Delete Issue**: `DELETE /api/v1/issues/:id`
 
-### 5. (Optional) Dockerization
+### 5. Postman Collection
 
-If time permits, this project will be Dockerized to simplify deployment.
+To make testing easier, a Postman collection is provided. You can find it at the following path:
+
+Copy code
+
+`server/SitemateBackendChallenge-Sep2024.postman_collection.json`
+
+- **Import the Collection**: Import this file into Postman to easily access and run the CRUD operations.
 
 ## Future Enhancements
 
