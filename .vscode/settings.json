@@ -1,0 +1,7 @@
+{
+    "cursor.cmdk.useThemedDiffBackground": true,
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack",
+    "editor.fontSize": 14,
+    "editor.minimap.sectionHeaderFontSize": 10
+}
