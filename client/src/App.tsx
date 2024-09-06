@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-import CreateIssue from './components/CreateIssue'
-import ReadIssues from './components/ReadIssues'
-import UpdateIssue from './components/UpdateIssue'
-import DeleteIssue from './components/DeleteIssue'
+import CreateIssue from './components/CreateIssue';
+import ReadIssues from './components/ReadIssues';
+import UpdateIssue from './components/UpdateIssue';
+import DeleteIssue from './components/DeleteIssue';
 
-import './styles/index.css'
+import './styles/index.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
       <Router>
@@ -22,7 +23,7 @@ function App() {
               <li><Link to="/delete">Delete Issue</Link></li>
             </ul>
           </nav>
-          
+
           <Routes>
             <Route path="/" element={<h2>Welcome to Issue tracker!!</h2>} />
             <Route path="/create" element={<CreateIssue />} />
@@ -33,7 +34,7 @@ function App() {
         </div>
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
